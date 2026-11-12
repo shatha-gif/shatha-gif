@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Shadha Alkhadri — kindergarten teacher turned software engineer">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#e2d6bd"/></pattern>
+    <linearGradient id="grad" x1="0" x2="1"><stop offset="0" stop-color="#4f8fe6"/><stop offset=".55" stop-color="#9a7be0"/><stop offset="1" stop-color="#ef6f6c"/></linearGradient>
+    <linearGradient id="crayon" x1="0" x2="1"><stop offset="0" stop-color="#ef6f6c"/><stop offset=".25" stop-color="#f6c344"/><stop offset=".5" stop-color="#5cbf8a"/><stop offset=".75" stop-color="#4f8fe6"/><stop offset="1" stop-color="#9a7be0"/></linearGradient>
+    <style>
+      .t{font-family:'Fredoka','Nunito','Segoe UI',Arial,sans-serif;font-weight:700;fill:#2b2340}
+      .s{font-family:'Nunito','Segoe UI',Arial,sans-serif;font-weight:600;fill:#5d5675}
+      .m{font-family:'JetBrains Mono',Consolas,monospace;font-size:15px}
+      .blk{animation:bob 3s ease-in-out infinite}
+      .b2{animation-delay:.25s}.b3{animation-delay:.5s}.b4{animation-delay:.75s}
+      @keyframes bob{50%{transform:translateY(-8px)}}
+      .float{animation:float 6s ease-in-out infinite}
+      @keyframes float{50%{transform:translate(8px,-10px) rotate(12deg)}}
+      .under{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.4s .4s ease forwards}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      .caret{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+    </style>
+  </defs>
+  <rect width="1200" height="340" rx="28" fill="#fbf6ec"/>
+  <rect width="1200" height="340" rx="28" fill="url(#dots)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#crayon)"/>
+
+  <!-- floating doodles -->
+  <g class="float" style="transform-origin:90px 60px"><rect x="78" y="48" width="22" height="22" rx="6" fill="#ef6f6c" opacity=".5"/></g>
+  <g class="float" style="transform-origin:640px 300px;animation-delay:-2s"><circle cx="640" cy="300" r="11" fill="none" stroke="#4f8fe6" stroke-width="4" opacity=".5"/></g>
+  <g class="float" style="transform-origin:700px 50px;animation-delay:-4s"><text x="690" y="58" class="m" fill="#9a7be0" font-weight="700" font-size="20">&lt;/&gt;</text></g>
+
+  <!-- text -->
+  <text x="70" y="128" class="t" font-size="58">Hi, I'm Shadha<tspan fill="#ef6f6c">.</tspan></text>
+  <path class="under" d="M262 140 C320 132 380 146 470 136" stroke="#f6c344" stroke-width="12" stroke-linecap="round" fill="none" opacity=".85"/>
+  <text x="70" y="192" class="t" font-size="40">I build software that <tspan font-family="'Instrument Serif',Georgia,serif" font-style="italic" font-weight="400" fill="url(#grad)" font-size="46">teaches</tspan>.</text>
+  <text x="72" y="240" class="s" font-size="21">Kindergarten teacher → Software Engineer · MSc SE (UPM) · UI/UX · AI · EdTech</text>
+  <text x="72" y="290" class="m" fill="#5d5675">shadha.build(<tspan fill="#5cbf8a">"something kind"</tspan>)<tspan class="caret" fill="#2b2340">▌</tspan></text>
+
+  <!-- ABC blocks -->
+  <g transform="translate(860 120) rotate(-5)">
+    <g class="blk"><rect width="70" height="70" rx="13" fill="#ef6f6c"/><rect y="58" width="70" height="12" rx="6" fill="#000" opacity=".15"/><text x="35" y="47" text-anchor="middle" class="t" font-size="34" fill="#fff" style="fill:#fff">A</text></g>
+    <g class="blk b2" transform="translate(80 0)"><rect width="70" height="70" rx="13" fill="#f6c344"/><rect y="58" width="70" height="12" rx="6" fill="#000" opacity=".15"/><text x="35" y="47" text-anchor="middle" class="t" font-size="34" style="fill:#fff">B</text></g>
+    <g class="blk b3" transform="translate(160 0)"><rect width="70" height="70" rx="13" fill="#5cbf8a"/><rect y="58" width="70" height="12" rx="6" fill="#000" opacity=".15"/><text x="35" y="47" text-anchor="middle" class="t" font-size="34" style="fill:#fff">C</text></g>
+    <g class="blk b4" transform="translate(80 82)"><rect width="70" height="70" rx="13" fill="#4f8fe6"/><rect y="58" width="70" height="12" rx="6" fill="#000" opacity=".15"/><text x="35" y="46" text-anchor="middle" class="t" font-size="28" style="fill:#fff">{ }</text></g>
+  </g>
+</svg>
